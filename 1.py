@@ -159,35 +159,3 @@ for i in range(0,5):
         i+=5
         print('-',dataBuku['original_title'].iloc[similarGamesBudi[i][0]])
 
-print(' ')
-print('3. Buku bagus untuk Ciko:')
-for i in range(0,5):
-    if similarGamesCiko[i][0] not in suka3:
-        print('-',dataBuku['original_title'].iloc[similarGamesCiko[i][0]])
-    else:
-        i+=5
-        print('-',dataBuku['original_title'].iloc[similarGamesCiko[i][0]])
-
-print(' ')
-print('4. Buku bagus untuk Dedi:')
-for i in range(0,5):
-    if similarGamesDedi[i][0] not in suka4:
-        print('-',dataBuku['original_title'].iloc[similarGamesDedi[i][0]])
-    else:
-        i+=5
-        print('-',dataBuku['original_title'].iloc[similarGamesDedi[i][0]])
-
-print(' ')
-print('5. Buku bagus untuk Ello:')
-for i in range(0,5):
-    if similarGamesEllo[i][0] not in suka5:
-        if str(dataBuku['original_title'].iloc[similarGamesEllo[i][0]])=='nan':
-            print('-',dataBuku['title'].iloc[similarGamesEllo[i][0]])
-        else:
-            print('-',dataBuku['original_title'].iloc[similarGamesEllo[i][0]])  
-    else:
-        i+=5
-        if str(dataBuku['original_title'].iloc[similarGamesEllo[i][0]])=='nan':
-            print('-',dataBuku['title'].iloc[similarGamesEllo[i][0]])
-        else:
-            print('-',dataBuku['original_title'].iloc[similarGamesEllo[i][0]])  
